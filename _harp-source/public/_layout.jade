@@ -1,0 +1,18 @@
+doctype
+html
+  head
+    link(rel="stylesheet" href="css/bootstrap.css")
+    script(src="js/jquery.min.js")
+    script(src="js/bootstrap.min.js")
+  body(class="container-fluid")
+    section.jumbotron
+      h1 JS Evening Class
+    section.row
+      div.col-xs-12
+        ul.nav.nav-pills
+          li
+            a(href='/') Home
+          li
+            a(href='articles-example.html') Articles Example
+
+  != yield

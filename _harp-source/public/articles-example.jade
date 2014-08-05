@@ -1,0 +1,4 @@
+for post, slug in public.posts._data
+  div.post
+    h3: =post.title
+    != partial("posts/" + slug)
