@@ -1,18 +1,31 @@
 doctype
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 html
   head
-    link(rel="stylesheet" href="css/bootstrap.css")
-    script(src="js/jquery.min.js")
-    script(src="js/bootstrap.min.js")
+    link(rel="stylesheet" href="css/main.css")
+    script(src="js/vendor/respond.min.js")
+    script(src="js/vendor/modernizr-2.7.1.custom.min.js")
+    script(src="js/vendor/jquery-1.9.1.min.js")
   body(class="container-fluid")
-    section.jumbotron
-      h1 JS Evening Class
-    section.row
-      div.col-xs-12
-        ul.nav.nav-pills
-          li
-            a(href='/') Home
-          li
-            a(href='articles-example.html') Articles Example
+    .navigation-wrapper
+      .site-name
+        a(href='/') JS Evening
+      .top-navigation
+        nav#site-nav.nav(role='navigation')
+          ul
+            li
+              a(href='articles-example.html') articles-example
+            li
+              a(href='#') About the course
+            li
+              a(href='#') Curriculum
+            li
+              a(href='#') Resources
+            li
+              a(href='http://portlandcodeschool.com', target='_blank') PCS Home
 
   != yield
+    script(src='js/scripts.min.js')
